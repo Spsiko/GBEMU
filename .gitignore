@@ -1,55 +1,41 @@
-# Prerequisites
-*.d
+# Build output
+build/
+bin/*.exe
 
-# Object files
+# SDL runtime DLL copied locally for Windows runs
+bin/SDL2.dll
+SDL2.dll
+
+# Compiled test executables
+tests/**/*.exe
+
+# Compiler intermediates
 *.o
-*.ko
+*.d
 *.obj
-*.elf
-
-# Linker output
-*.ilk
+*.ihx
+*.lk
+*.lst
 *.map
-*.exp
+*.noi
+*.sym
+*.asm
 
-# Precompiled Headers
-*.gch
-*.pch
+# Local ROMs, saves, framebuffer dumps
+*.gb
+*.gbc
+*.sav
+*.ppm
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Keep public/legal test ROMs if intentionally included
+!tests/test_roms/*.gb
+!tests/test_roms/*.gbc
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Temporary files
+make_sdl_error.txt
+run_all_tests.sh
+run_all_tests_clean.sh
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# Editor junk
+*.swp
+.DS_Store
