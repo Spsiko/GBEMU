@@ -1,6 +1,6 @@
 # Build output
 build/
-bin/*.exe
+bin/
 
 # SDL runtime DLL copied locally for Windows runs
 bin/SDL2.dll
